@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Question Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center mt-4 mb-5 text-primary fs-1">All Questions Here</h1>
+    <section>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Diference between Local Storage And Session Storage?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                <strong>Local Storage :</strong> <br />
+                local storage means which is store data through by API.Their
+                main difference is that local storage data does not expire. if
+                you want to <br />
+                clear storage data. It provide 5 oparation (
+                <code> getItem</code>, <code> setItem</code>,
+                <code> removeItem</code>,<code> clear()</code>).it store data as
+                a string. <br />
+                if you want to use it in UI it have to convert by JSON(parse,
+                stringify) opration <br />it store like 10 MB data.
+              </p>
+              <p>
+                <strong>Session Storage :</strong> <br />
+                Session storage also store data like local storage but the main
+                differece is its memory is volatile for that if we refresh web
+                site, <br />
+                All store data will be vanish.If you use session storage they In
+                both cases they will use methods such as local storage
+                oparation. <br />
+                It store only 5MB data.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              What are the difference in Global scope and block scope
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                <strong>Global Scope:</strong> <br />
+                Global scope is globally behaviour.it works like hoisting but
+                some function and variable can be a global variable <br />
+                ( <code>let</code> and <code>const</code> )work in a blockscope
+                but they didn't work globally except <code>var</code> because it
+                work hoistingly which initallied it top of the code.
+              </p>
+              <p>
+                <strong>Block Scope :</strong>
+                A variable when declared inside the if for conditions or inside
+                for or while loops, are accessible within that particular
+                condition or loop. <br />
+                To be consise the variables declared inside the perethesis are
+                called as within block scope. <br />But we should not to use
+                <code>var</code> because it work as like as global variable.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              What is Event Loop?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                <strong>Event Loop:</strong> <br />
+                JavaScript is operations on a single thread and synchonize based
+                on but it can be run asynchornize when it run in browser API.
+                <br />
+                when js file run it store data to assign like a object this
+                place name is Heap.Other hand it execute all functions or
+                methods execution in stack, <br />
+                If js file has any browser API method it store in callback area
+                and at a time event loop check stack isEmpty if event loop find
+                free execution, <br />
+                Then it oull out asynchornize or browser API methods by LIFO
+                system. its call event loop.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              Why we found undifined?
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                <strong
+                  >Some special cases value can be return undifined:</strong
+                >
+              </p>
+              <ol>
+                <li>If variable declared but cannot intiallized</li>
+                <li>If function has no parameter</li>
+                <li>If parameter that is not pass by value</li>
+                <li>
+                  if return parameter is not right value by any conditions
+                </li>
+                <li>if property doesn't exists on an object</li>
+                <li>if have no index range in array</li>
+                <li>If deleting an element inside an array</li>
+                <li>If set a value directly to undifined</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
