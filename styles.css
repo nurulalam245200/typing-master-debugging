@@ -111,6 +111,9 @@ body {
   margin: 0 auto;
 }
 
+.text-center {
+  text-align: center;
+}
 .line {
   height: 2px;
   background: white;
@@ -152,7 +155,8 @@ button {
   height: 100%;
   padding: 50px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   padding: 20px 30px;
   color: white;
@@ -187,6 +191,14 @@ button {
     width: 100%;
   }
   .card {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #histories {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
   }
 }
