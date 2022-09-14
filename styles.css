@@ -192,13 +192,14 @@ button {
   }
   .card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
   #histories {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
